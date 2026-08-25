@@ -1,0 +1,15 @@
+.venv/
+.ui-venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/
+.idea/
+data/archives/
+data/raw/
+runs/
+reports/figures/
+reports/*.json
+.DS_Store

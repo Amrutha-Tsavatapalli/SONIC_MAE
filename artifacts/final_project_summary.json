@@ -1,0 +1,20 @@
+{
+  "selected_model": "SonicMAE T2_lower_mask",
+  "dataset": "MIMII Pump Sound Dataset",
+  "train_normal_files": 266,
+  "validation_normal_files": 57,
+  "test_normal_files": 58,
+  "test_abnormal_files": 138,
+  "roc_auc": 0.7862318840579711,
+  "pauc_at_10_fpr": 0.6910755148741419,
+  "f1_score": 0.6039603960396039,
+  "precision": 0.953125,
+  "recall": 0.4420289855072464,
+  "threshold": 2.9193828105926514,
+  "hyperparameters": {
+    "name": "T2_lower_mask",
+    "learning_rate": 0.001,
+    "mask_ratio": 0.25,
+    "contrastive_weight": 0.2
+  }
+}
