@@ -1,0 +1,14 @@
+Experiment,ROC-AUC,pAUC @ 10% FPR,Precision,Recall,F1-Score,Threshold
+"Proposed SonicMAE (Dual Stream, Single Centroid)",0.8543,0.4725,0.9649,0.3986,0.5641,3.0098
+SonicMAE + Multi-Centroid Bank (K=5),0.8323,0.419,0.9516,0.4275,0.59,3.269
+SonicMAE + Multi-Centroid Bank (K=3),0.836,0.424,0.9808,0.3696,0.5368,3.1418
+Ablation: Reconstruction Error Stream Only,0.5876,0.1779,0.8837,0.2754,0.4199,1.153
+Ablation: Latent Prototype Distance Only,0.8754,0.493,0.9672,0.4275,0.593,1.8668
+Baseline: PCA + Isolation Forest,0.845,0.7666,1.0,0.5,0.6667,-0.052
+Baseline: Standard CNN Autoencoder,0.5702,0.5483,0.8462,0.2391,0.3729,0.0412
+Ablation: Mask Ratio r=0.15 (Fine Masking),0.7512,0.652,0.92,0.3333,0.4894,2.854
+Ablation: Mask Ratio r=0.50 (Heavy Masking),0.718,0.6145,0.8846,0.3333,0.4842,3.12
+Ablation: No Phase Scrambling (lambda=0.0),0.734,0.638,0.9016,0.3986,0.5528,2.94
+Ablation: High Phase Scrambling (lambda=0.4),0.7625,0.669,0.9322,0.3986,0.5584,2.981
+Custom Arch: SonicConformerMAE (Conv-Transformer),0.781,0.5197,0.9714,0.4928,0.6538,2.5102
+Transfer Learning: Pretrained MobileNetV2,0.7438,0.2511,0.9333,0.3043,0.459,1.2204

@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: sonicmae
+Version: 0.1.0
+Summary: Contrastive masked audio learning for industrial anomaly detection
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.24
+Requires-Dist: torch>=2.2
+Requires-Dist: PyYAML>=6.0

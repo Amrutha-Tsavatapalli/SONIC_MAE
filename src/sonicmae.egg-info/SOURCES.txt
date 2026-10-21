@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/sonicmae/__init__.py
+src/sonicmae/audio.py
+src/sonicmae/augment.py
+src/sonicmae/data.py
+src/sonicmae/infer.py
+src/sonicmae/model.py
+src/sonicmae/scoring.py
+src/sonicmae/train.py
+src/sonicmae.egg-info/PKG-INFO
+src/sonicmae.egg-info/SOURCES.txt
+src/sonicmae.egg-info/dependency_links.txt
+src/sonicmae.egg-info/entry_points.txt
+src/sonicmae.egg-info/requires.txt
+src/sonicmae.egg-info/top_level.txt
+tests/test_signal_pipeline.py

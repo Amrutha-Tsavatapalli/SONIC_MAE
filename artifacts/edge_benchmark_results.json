@@ -1,0 +1,29 @@
+{
+  "hardware_target": "Industrial Edge Gateway / Raspberry Pi 4 / Jetson Nano",
+  "input_audio_length_seconds": 10.0,
+  "input_spectrogram_shape": [
+    1,
+    1,
+    64,
+    320
+  ],
+  "fp32": {
+    "model_size_kb": 916.76,
+    "mean_latency_ms": 5.26,
+    "median_latency_ms": 5.25,
+    "p95_latency_ms": 6.49,
+    "throughput_fps": 190.3
+  },
+  "int8_quantized": {
+    "model_size_kb": 868.09,
+    "mean_latency_ms": 6.42,
+    "median_latency_ms": 6.28,
+    "p95_latency_ms": 8.85,
+    "throughput_fps": 155.8
+  },
+  "compression_ratio": 1.06,
+  "latency_speedup": 0.82,
+  "embedding_cosine_similarity": 0.999965,
+  "reconstruction_mae": 0.0,
+  "meets_realtime_sla": true
+}

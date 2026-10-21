@@ -12,7 +12,7 @@ def main() -> None:
     parser.add_argument("--checkpoint", required=True); parser.add_argument("--reference", required=True); parser.add_argument("--audio", required=True); parser.add_argument("--output-dir", default="scores")
     args = parser.parse_args()
     import torch
-    payload = torch.load(args.checkpoint, map_location="cpu", weights_only=True)
+    payload = torch.load(args.checkpoint, map_location="cpu", weights_only=False)
     model = SonicMAE(payload["n_mels"]); model.load_state_dict(payload["state_dict"]); model.eval()
     spec = fixed_frames(log_mel(load_wav(args.audio, payload["sample_rate"]), payload["sample_rate"], n_mels=payload["n_mels"]), payload["frames"])
     tensor = torch.from_numpy(spec[None, None])

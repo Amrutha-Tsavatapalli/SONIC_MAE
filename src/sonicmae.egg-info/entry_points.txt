@@ -1,0 +1,3 @@
+[console_scripts]
+sonicmae-score = sonicmae.infer:main
+sonicmae-train = sonicmae.train:main
